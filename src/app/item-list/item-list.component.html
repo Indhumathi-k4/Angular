@@ -1,0 +1,8 @@
+<p>item-list works!</p>
+<h2>Item List</h2>
+
+<button (click)="toggleVisibility()">Toggle List</button>
+
+<ul *ngIf="isVisible">
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>

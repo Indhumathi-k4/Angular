@@ -1,0 +1,8 @@
+<p>pagination works!</p>
+<h2>Paginated Data</h2>
+<ul>
+  <li *ngFor="let item of paginatedData">{{ item }}</li>
+</ul>
+
+<button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+<button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= data.length">Next</button>

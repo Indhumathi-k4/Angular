@@ -1,0 +1,9 @@
+<p>modal works!</p>
+<button (click)="openModal()">Open Modal</button>
+
+<div *ngIf="showModal" class="modal">
+  <div class="modal-content">
+    <p>This is a modal popup!</p>
+    <button (click)="closeModal()">Close</button>
+  </div>
+</div>
